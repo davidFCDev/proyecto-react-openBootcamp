@@ -10,9 +10,14 @@ import Ejemplo4 from './hooks/Ejemplo4';
 import GreetingStyled from './components/pure/greetingStyled';
 import Father from './components/container/father';
 import OptionalRender from './components/pure/optionalRender';
-import Loginformik from './components/pure/forms/loginFormik';
+import LoginFormik from './components/pure/forms/loginFormik';
 import RegisterFormik from './components/pure/forms/registerFormik';
 import TasklistFormik from './components/container/task_listFormik';
+import AsyncExample from './components/pure/AsyncExample';
+import ObservableExample from './components/pure/ObservableExample';
+import FetchExample from './components/pure/FetchExample';
+import AxiosExample from './components/pure/AxiosExample';
+import CardContainer from './components/pure/card';
 
 function App() {
   return (
@@ -45,7 +50,14 @@ function App() {
       {/* Ejemplos de uso de FORMIK */}
       {/* <Loginformik></Loginformik> */}
       {/* <RegisterFormik></RegisterFormik> */}
-      <TasklistFormik></TasklistFormik>
+      {/* <TasklistFormik></TasklistFormik> */}
+
+      {/* Ejemplos de procesos asíncronos */}
+      {/* <AsyncExample/> */}
+      {/* <ObservableExample/> */}
+      {/* <FetchExample></FetchExample> */}
+      {/* <AxiosExample/> */}
+      {/* <CardContainer/> */}
         
       {/* PROYECTO FINAL */}
       {/* <TaskListComponent></TaskListComponent> */}
