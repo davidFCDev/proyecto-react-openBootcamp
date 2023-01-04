@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getAllPagedlUsers, getAllUsers, getUserDetails, login } from '../../services/fetchService';
+import { getAllPagedUsers, getAllUsers, getUserDetails, login } from '../../services/fetchService';
 
 const FetchExample = () => {
 
@@ -33,7 +33,7 @@ const FetchExample = () => {
     }
 
     const obtainPagedUsers = (page) => {
-        getAllPagedlUsers(page)
+        getAllPagedUsers(page)
         .then((response) => {
             console.log('All paged users', response.data);
             setUsers(response.data);

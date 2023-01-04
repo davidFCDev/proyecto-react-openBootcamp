@@ -9,7 +9,7 @@ export const getAllUsers = async () => {
     return response.json();
 }
 
-export const getAllPagedlUsers = async (page) => {
+export const getAllPagedUsers = async (page) => {
 
     let response = await fetch(`https://reqres.in/api/users?page=${page}`);
     console.log('Response:', response);

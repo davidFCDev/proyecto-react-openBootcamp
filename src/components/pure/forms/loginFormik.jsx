@@ -70,7 +70,7 @@ const LoginFormik = () => {
                         }
 
                         <button type="submit">Login</button>
-                        { isSubmitting ? (<p>Login your redentials</p>) : null }
+                        { isSubmitting ? (<p>Login your credentials</p>) : null }
                     </Form>
                 )}     
             </Formik>

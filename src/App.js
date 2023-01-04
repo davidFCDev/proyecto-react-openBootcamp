@@ -1,34 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-import Greeting from './components/pure/greeting';
-import GreetingF from './components/pure/greetingF';
-import TaskListComponent from './components/container/task_list';
-import Ejemplo1 from './hooks/Ejemplo1';
-import Ejemplo2 from './hooks/Ejemplo2';
-import MiComponenteConContexto from './hooks/Ejemplo3';
-import Ejemplo4 from './hooks/Ejemplo4';
-import GreetingStyled from './components/pure/greetingStyled';
-import Father from './components/container/father';
-import OptionalRender from './components/pure/optionalRender';
-import LoginFormik from './components/pure/forms/loginFormik';
-import RegisterFormik from './components/pure/forms/registerFormik';
-import TasklistFormik from './components/container/task_listFormik';
-import AsyncExample from './components/pure/AsyncExample';
-import ObservableExample from './components/pure/ObservableExample';
-import FetchExample from './components/pure/FetchExample';
-import AxiosExample from './components/pure/AxiosExample';
-import CardContainer from './components/pure/card';
+import logo from "./logo.svg";
+import "./App.css";
+import Greeting from "./components/pure/greeting";
+import GreetingF from "./components/pure/greetingF";
+import TaskListComponent from "./components/container/task_list";
+import Ejemplo1 from "./hooks/Ejemplo1";
+import Ejemplo2 from "./hooks/Ejemplo2";
+import MiComponenteConContexto from "./hooks/Ejemplo3";
+import Ejemplo4 from "./hooks/Ejemplo4";
+import GreetingStyled from "./components/pure/greetingStyled";
+import Father from "./components/container/father";
+import OptionalRender from "./components/pure/optionalRender";
+import LoginFormik from "./components/pure/forms/loginFormik";
+import RegisterFormik from "./components/pure/forms/registerFormik";
+import TasklistFormik from "./components/container/task_listFormik";
+import AsyncExample from "./components/pure/AsyncExample";
+import ObservableExample from "./components/pure/ObservableExample";
+import FetchExample from "./components/pure/FetchExample";
+import AxiosExample from "./components/pure/AxiosExample";
+import CardContainer from "./components/pure/card";
+import AxiosCrudExample from "./components/pure/AxiosCrudExample";
+
+import Updater from "./components/sw/Updater";
 
 function App() {
+  const version = "app-v3-front";
   return (
     <div className="App">
+      <h1>Versión {version}</h1>
       {/* <header className="App-header"> */}
       {/* <img src={logo} className="App-logo" alt="logo" /> */}
-      { /* Componente propio Greeting.jsx */ }
+      {/* Componente propio Greeting.jsx */}
       {/*<Greeting name={"Paco"}></Greeting>*/}
-      { /* Componente de ejemplo funcional */ }
+      {/* Componente de ejemplo funcional */}
       {/*<GreetingF name={"Paco"}></GreetingF>*/}
-      { /* Componente de listado de tareas */ }
+      {/* Componente de listado de tareas */}
       {/* <TaskListComponent></TaskListComponent> */}
       {/*<Ejemplo1></Ejemplo1>*/}
       {/*<Ejemplo2></Ejemplo2>*/}
@@ -58,9 +63,11 @@ function App() {
       {/* <FetchExample></FetchExample> */}
       {/* <AxiosExample/> */}
       {/* <CardContainer/> */}
-        
+      <AxiosCrudExample />
+
       {/* PROYECTO FINAL */}
       {/* <TaskListComponent></TaskListComponent> */}
+      <Updater />
     </div>
   );
 }
