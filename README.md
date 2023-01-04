@@ -1,3 +1,5 @@
+# Proyecto React de gestión de tareas con implementación de PWA
+
 # Generación de funcionalidades PWA en aplicación existente
 ¿Qué pasos hace falta dara para convertir esta app en una Progressive Web App?
 1. Package.json -> Instalar todas las dependencias de Workbox:
@@ -20,5 +22,3 @@
 3. Referenciar el serviceWorker desde el index.js
 
 
-
-# Proyecto React del Open Bootcamp
